@@ -287,7 +287,7 @@
 #define CURSE_LAYER 6
 #define ECHO_LAYER 7
 #define PARRY_LAYER 8
-#define CARRIER_LAYER 0 // SKYRAT EDIT - CARRIERS
+#define CARRIER_LAYER 0 // Greener changes, so that the UI stays visible
 
 #define FOV_EFFECT_LAYER 100
 
