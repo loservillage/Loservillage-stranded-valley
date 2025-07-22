@@ -10351,4 +10351,9 @@
 #include "modular_zzplurt\code\modules\vending\vending.dm"
 #include "modular_zzplurt\code\modules\wiremod\core\integrated_circuit.dm"
 #include "modular_zzplurt\maps\offstation\seedvault.dm"
+//Loservillage bits
+//SV
+#include "modular_loservillage_strandedvalley\includes.dm"
+//SV end
+//Loservillage end
 // END_INCLUDE
