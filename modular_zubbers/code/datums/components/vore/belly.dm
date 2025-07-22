@@ -498,18 +498,17 @@
 
 // Driven by /datum/digest_mode but put here for reusablity
 /obj/vore_belly/proc/try_play_gurgle_sound()
-	if(COOLDOWN_FINISHED(src, noise_cooldown))
-		if(LAZYLEN(contents) && prob(50))
-			var/prey_sound = null
-			var/pred_sound = null
-			if(fancy_sounds)
-				prey_sound = "vore_sounds_digestion_fancy_prey"
-				pred_sound = "vore_sounds_digestion_fancy"
-			else
-				prey_sound = "vore_sounds_digestion_classic"
-				pred_sound = "vore_sounds_digestion_classic"
-			play_vore_sound_preypred(prey_sound, pred_sound, pref = /datum/vore_pref/toggle/digestion_noises)
-			COOLDOWN_START(src, noise_cooldown, DIGESTION_NOISE_COOLDOWN)
+	if(LAZYLEN(contents))
+		var/prey_sound = null
+		var/pred_sound = null
+		if(fancy_sounds)
+			prey_sound = "vore_sounds_digestion_fancy_prey"
+			pred_sound = "vore_sounds_digestion_fancy"
+		else
+			prey_sound = "vore_sounds_digestion_classic"
+			pred_sound = "vore_sounds_digestion_classic"
+		play_vore_sound_preypred(prey_sound, pred_sound, pref = /datum/vore_pref/toggle/digestion_noises)
+		COOLDOWN_START(src, noise_cooldown, DIGESTION_NOISE_COOLDOWN)
 
 /mob/proc/wants_vore_fullscreen()
 	var/datum/vore_preferences/vore_prefs = get_vore_prefs()
