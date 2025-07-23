@@ -51,6 +51,10 @@
 	desc = "A 9mm incendiary bullet casing."
 	projectile_type = /obj/projectile/bullet/incendiary/c9mm
 
+/obj/item/ammo_casing/c9mm/surplus
+	name = "9mm surplus bullet casing"
+	desc = "A 9mm surplus bullet casing"
+	projectile_type = /obj/projectile/bullet/c9mm/surplus
 // .50AE (Desert Eagle)
 
 /obj/item/ammo_casing/a50ae

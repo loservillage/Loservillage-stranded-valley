@@ -32,6 +32,9 @@
 	damage = 15
 	fire_stacks = 2
 
+/obj/projectile/bullet/c9mm/surplus
+	name = "9mm surplus bullet"
+	damage = 10
 // 10mm
 
 /obj/projectile/bullet/c10mm
